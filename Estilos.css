@@ -5,6 +5,15 @@
     border: none;
 }
 
+.Contenedor-Articulo-Aside{
+    flex-direction: column;
+    display: flex;
+}
+
+.article-aside{
+    display: flex;
+}
+
 /*Encabezado del Articulo*/
 
 a{
@@ -22,6 +31,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 button{
@@ -38,12 +48,13 @@ button{
 }
 
 .Titulo-Encabezado{
-    display: flex;
+    margin-top: 0;
+    display: inline-flex;
+    flex-direction: row;
     text-align: center;
     color: #0250c9;
     font-size: 50px;
     cursor: pointer;
-    padding: 0 10px;
 }
 
 .boton-Suscribete{
@@ -84,9 +95,12 @@ button{
 
 /*Articulo*/
 
+body{
+    flex-direction: column;
+}
+
 main{
     font-family: Georgia, serif;
-    margin-top: 110px;
     margin-left: 10px;
     /*font-size: 19px;*/
 }
@@ -97,15 +111,42 @@ main{
     box-shadow: inset 5px 0 5px -5px #cecece;
     border-radius: 4px;   
     padding: 20px;
+    margin-bottom: 30px;
 }
 
+.imagen-1{
+    width: 15%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
 
-h1{
-    display: block;
+.Links{
+    margin-left: 30px;
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 100px;
+    color: #0250c9;
+    padding: 10px;
+}
+
+.Link__LA-NACION{
+    padding-right: 15px;
+}
+
+.title{
+    display: inline-block;
+    margin-top: 5px;
     font-size: 35px;
-    margin: 12px 0;
     font-weight: bold;
     line-height: 1.5em;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    font-family: Georgia, serif;
+    padding: 0 20px;
+    background-color: rgb(250, 249, 249);
+    box-shadow: inset 5px 0 5px -5px #cecece;
+    border-radius: 4px;  
 }
 
 .Subtitulo-Noticia{
@@ -120,32 +161,42 @@ span{
     display: block;
     height: fit-content;
     color: #5a5a5a;
-    margin: 8px 0;
+    margin-bottom: 10px;
+    margin-top: 0;
     font-size: 18px;
+}
+
+.Imagen-2{
+    padding-left: 0 40px 0 0;
 }
 
 article img{
     width: 100%;
-    display: block;
-    padding: 0 40px 0 0;
+    display: flex;
 }
+
+
 
 .Descripción-Imagen{
     display: inline-block;
     font-size: 18px;
-    margin:  15px 0; 
-    font-weight: normal;   
+    margin:  10px 0; 
+    font-weight: normal; 
 }
 
 section{
     line-height: 1.8em;
     padding-left: 16px;
     margin: 20px;
-    font-size: 20px;
+    font-size: 20px; 
 }
 
 p{
     margin: 20px 0;
+}
+
+.Info{
+    margin: -5px 0;
 }
 
 strong{
@@ -156,7 +207,12 @@ strong{
 
 h2{
     font-size: 30px;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+hr{
+    border-bottom: 1px solid #E5E5E5;
 }
 
 /*Aside*/
@@ -167,7 +223,7 @@ aside{
     margin-left: .5rem;
     box-shadow: inset 5px 0 5px -5px #cecece;
     color: #000000;
-    margin-top: 110px;
+    margin-top: 30px;
 	margin-left: 10px;
 	padding: 10px 50px;
 	font-size: 16px;
@@ -178,6 +234,7 @@ aside{
 
 aside h1{
     font-size: 30px;
+    margin: 2px;
 }
 
 aside img{
@@ -192,8 +249,56 @@ aside p{
     cursor: pointer;
 }
 
-.Contenedor-Articulo-Aside{
-    display: flex;
+/*Footer*/
+
+footer h1{
+    display: inline-flex;
+    flex-direction: row;
+    color: #0250c9;
+    font-size: 50px;
+    cursor: pointer;
+    margin-bottom: 15px;
 }
 
-/*Footer*/
+
+.titulo-imagen-footer{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-google{
+    margin: 0 5px 0 15px;
+}
+
+.imagen-app{
+    margin: 0 5px 0 15px;
+    margin-right: 90px;
+}
+
+.links-footer{
+    display: inline-flex;
+}
+
+li{
+    margin: 10px 15px;
+}
+
+footer p{
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Georgia, serif;
+}
+
+.ultimo-parrafo-footer{
+    display: flex;
+    float: right;
+    margin: 30px;
+    margin-bottom: 40px;
+}
