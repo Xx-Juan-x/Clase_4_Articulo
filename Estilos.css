@@ -9,6 +9,11 @@ a{
     text-decoration: none;
 }
 
+img:hover, a:hover{
+    filter: opacity(.9);
+    transition: all .2s ease-in-out;
+}
+
 /*Encabezado del Articulo*/
 
 header{
@@ -98,7 +103,8 @@ button{
 
 main{
     font-family: Georgia, serif;
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-right: 0;
 }
 
 .contenedor-article-aside{
@@ -113,7 +119,7 @@ main{
 .Articulo{
     background-color: rgb(250, 249, 249);
     box-shadow: inset 5px 0 5px -5px #cecece;  
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     margin-bottom: 30px;
     width: 70%;
     float: left;
@@ -134,12 +140,12 @@ main{
 
 .title-noticia{
     display: inline-block;
-    margin: 5px 5px 0 10px; 
+    margin: 0 30px 0 30px; 
     font-size: 35px;
     font-weight: bold;
     line-height: 1.5em;
     font-family: Georgia, serif;
-    padding: 20px 20px;
+    padding: 0 20px;
     background-color: rgb(250, 249, 249);
     box-shadow: inset 5px 0 5px -5px #cecece; 
 }
@@ -147,12 +153,12 @@ main{
 .Subtitulo-Noticia{
     display: inline-block;
     font-size: 20px;
-    margin:  14px 0; 
+    margin:  14px 0 20px 0; 
     font-weight: normal;
     line-height: 1.5em;
 }
 
-span{
+span {
     display: block;
     height: fit-content;
     color: #5a5a5a;
@@ -163,11 +169,13 @@ span{
 
 .Imagen-2{
     padding-left: 0 40px 0 0;
+    margin-top: 50px;
 }
 
 article img{
     width: 100%;
-    display: flex;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 
@@ -213,13 +221,14 @@ hr{
 /*Aside*/
 
 aside{
-    width: 29%;
+    width: 27.05%;
     float: right;
-	padding: 50px;
+	padding: 30px;
 	font-size: 16px;
 	background: rgb(250, 249, 249);
 	border: none;
 	border-radius: 6px;
+    margin-right: 30px;
 }
 
 aside h1{
@@ -245,7 +254,7 @@ aside p{
 /*Footer*/
 
 footer{
-    margin: 0 10px;
+    margin: 0 30px;
 }
 
 footer h1{
@@ -266,6 +275,7 @@ footer h1{
     border-radius: 0.25rem;
     cursor: pointer;
     float: right;
+    margin-right: 50px;
     justify-content: center;
 }
 
@@ -283,7 +293,7 @@ footer h1{
 
 li{
     margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 18px;
     padding: 5px;
     display: inline-block;
 }
