@@ -18,6 +18,7 @@ header{
     padding: 30px 15px;
     z-index: 1;
 }
+
 /* NAV DEL ENCABEZADO */
 
 button{
@@ -214,7 +215,7 @@ footer{
     margin: 0 24px;
 }
 
-footer h1{
+footer h2{
     display: inline-block;
     color: #0250c9;
     font-size: 50px;
@@ -281,7 +282,7 @@ footer p{
 	    border-radius: 6px;
    }
 
-    aside h1{
+    aside h2{
         font-size: 28px;
         text-align: center;
         padding-bottom: 10px;
@@ -325,9 +326,12 @@ footer p{
     }
 
     .tittle-encabezado{
+        display: inline-block;
+        position: relative;
         color: #0250c9;
-        font-size: 40px;
-        cursor: pointer;  
+        font-size: 50px;
+        cursor: pointer;
+        left: 150px;
     }
 
     .contenedor-button-left{
