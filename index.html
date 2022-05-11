@@ -11,32 +11,63 @@
         <link rel="stylesheet" href="Estilos.css">
     </head>
 
-    <body>        
+    <body>
+        <!--Encabezado y Barra de navegación-->        
         <header>
-            <nav>
-                <div class="botones-izquierda">
-                    <a href="#"><button class="boton-Secciones">SECCIONES</button></a> 
-                    <a href="#"><button class="boton-Buscar">BUSCAR</button></a> 
-                </div>          
-                    <h2 class="tittle-encabezado">LA NACION</h2>                     
-                <div class="botones-derecha">
-                    <a href="#"><button class="boton-Suscribete">SUSCRIBETE</button></a>
-                    <a href="#"><button class="boton-Ingresar">INGRESAR</button></a>  
+            <nav class="nav-Header">
+                <div class="contenedor-button-left">
+                    <div class="contenedor-button-secciones">
+                        <button class="boton-Secciones"><a href="#"></a>SECCIONES</button>
+                    </div>
+                    <div class="contenedor-button-buscar">
+                        <button class="boton-Buscar"><a href="#"></a>BUSCAR</button>
+                    </div>                             
+                </div> 
+
+                <div class="contenedor-tittle-encabezado">
+                    <h2 class="tittle-encabezado">LA NACION</h2> 
+                </div>
+                                        
+                <div class="contenedor-button-right">
+                    <div class="contenedor-button-suscribete">
+                        <button class="boton-Suscribete"><a href="#"></a>SUSCRIBETE</button>
+                    </div>
+                    <div class="contenedor-button-ingresar">
+                        <button class="boton-Ingresar"><a href="#"></a>INGRESAR</button>
+                    </div>                
                 </div>              
             </nav>
         </header> 
 
+        <!--Barra de navegación del Móvil-->
+        <div class="contenedor-NAV-Movil">
+            <nav class="NAV-Movil">              
+                    <ul>
+                        <li class="list"><a href="#">Home</a></li>
+                        <li class="list"><a href="#">Secciones</a></li>
+                        <li class="list"><a href="#">Club LA NACION</a></li>
+                        <li class="list"><a href="#">Mi Cuenta</a></li>
+                    </ul>               
+            </nav>
+        </div>       
+
         <div class="contenedor-article-aside">
 
-            <div class="Links">
+            <div class="contenedor-links-tittle">
+                
+                <nav class="nav-articulo">
                     <a  href="#">LA NACION</a>
-                    <a  href="#"> > El Mundo</a>         
-            </div>
-            
-            <a href="#"><img class="NEWS-mundo" src="https://arc-static.glanacion.com/pf/resources/images/bbc.svg?d=846" alt="NEWS|Mundo"></a> 
+                    <a  href="#"> > El Mundo</a>
+                </nav>              
 
-            <div class="title-noticia">
-                <h1><strong>Siete claves para entender cómo funciona la energía nuclear y qué desafíos enfrenta para reemplazar al gas y al petróleo</strong></h1> 
+                <div class="NEWS-mundo">
+                    <a href="#"><img src="https://arc-static.glanacion.com/pf/resources/images/bbc.svg?d=846" alt="NEWS|Mundo"></a>
+                </div>
+
+                <div class="title-noticia">
+                    <h1><strong>Siete claves para entender cómo funciona la energía nuclear y qué desafíos enfrenta para reemplazar al gas y al petróleo</strong></h1> 
+                </div>
+
             </div>
 
             <div class="contenido-article-aside">
@@ -234,23 +265,24 @@
             
             <hr>
 
-            <ul class="listas">
-                <li><a href="#">Mapa del sitio</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Términos y condiciones</a></li>
-                <li><a href="#">¿Cómo anunciar?</a></li>
-                <li> <a href="#">Suscribirse al diario impreso</a></li>
-                <div class="condiciones-privacidad">
-                    <li>Protegido por reCAPTCHA:</li> 
-                    <li><a href="#">Condiciones</a></li>
-                    <li><a href="#">Privacidad</a></li>  
-                </div>           
-            </ul>                                        
-            
-                 
-            <p>Copyright 2022 SA LA NACION | Todos los derechos reservados</p>
-
+            <div class="footer-listas">
+                <ul>
+                    <li><a href="#">Mapa del sitio</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">¿Cómo anunciar?</a></li>
+                    <li> <a href="#">Suscribirse al diario impreso</a></li>
+                    <div class="condiciones-privacidad">
+                        <li>Protegido por reCAPTCHA:</li> 
+                        <li><a href="#">Condiciones</a></li>
+                        <li><a href="#">Privacidad</a></li>  
+                    </div>           
+                </ul> 
+            </div>
+                        
             <p class="ultimo-parrafo-footer"><a href="#"> <img src="https://arc-static.glanacion.com/pf/resources/images/gda.svg?d=846" alt="GDA"></a> Miembro de GDA. Grupo de Diarios América <a href="#"> <img src="https://arc-static.glanacion.com/pf/resources/images/data-fiscal.svg?d=846" alt="QR"></a></p>
+
+            <p>Copyright 2022 SA LA NACION | Todos los derechos reservados</p>           
         </footer>
     </body>
 </html>

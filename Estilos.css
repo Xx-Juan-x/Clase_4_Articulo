@@ -1,4 +1,5 @@
-* {
+/* MÓVIL */
+*{
     box-sizing: border-box;
     margin: auto;
     padding: auto;
@@ -14,148 +15,138 @@ img:hover, a:hover{
     transition: all .2s ease-in-out;
 }
 
-/*Encabezado del Articulo*/
+/* ENCABEZADO */
 
 header{
+    position: fixed;
     width: 100%;
     height: 80px;
-    background-color: rgb(245, 245, 245);
-    border-bottom: 1px solid #E5E5E5;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 30px 15px;
+    z-index: 1;
 }
-nav{
-    display: block;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    padding: 20px;
-}
+/* NAV DEL ENCABEZADO */
 
 button{
-    
-    padding: 12px 16px;
-    font-size: 12px;
+    font-size: 0.75rem;
+    background-color: #fff;
     font-weight: 700;
-    border-radius: 4px;
-    outline: none;
-    border: 1px solid transparent;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
+    color: #0250c9;
 }
 
-.botones-izquierda{
+.nav-Hearder{
+    display: block;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-tittle-encabezado{
     float: left;
-    /*justify-content: left;
-    text-align: left;*/
-}
-
-.botones-derecha{
-    float: right;
 }
 
 .tittle-encabezado{
-    display: inline-block;
+    position: absolute;
+    font-size: 20px;
     color: #0250c9;
-    font-size: 40px;
-    cursor: pointer;
+    cursor: pointer;       
 }
 
-.boton-Suscribete{
-    background-color: #ffff24;
-    border-color: #ccc;
-    color: #000; 
-    margin: 0 24px 0 70px;  
+.contenedor-button-suscribete{
+    float: right;
+    padding: 3px 14px;
 }
 
-.boton-Suscribete:hover{
-    color: #fefefe;
-    background-color: #000;
+.contenedor-button-buscar{
+    float: right;
+    padding: 3px 14px;
 }
 
-.boton-Ingresar{
+.contenedor-button-secciones{
+    display: none;   
+}
+
+.contenedor-button-ingresar{
+    display: none;
+}
+
+/* NAV DEL MÓVIL */
+.contenedor-NAV-Movil{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid #e4e4e4;
+    height: 3.5rem;
     background-color: #fff;
-    border-color: #0250c9;
-    margin-right: 20px;
-}
-.boton-Ingresar:hover{
-    background: #126fff;
-    border-color: #126fff;
-    color: #fefefe;
+    z-index: 1;
 }
 
-.boton-Secciones{
-    margin: 0 24px 0 20px;
+.NAV-Movil{
+    position: fixed;
+    width: 100%;
 }
 
-.boton-Secciones:hover{
-    color: #126fff;
-}
-
-.boton-Buscar{
-    margin: 0 70px 0 0;
-}
-
-.boton-Buscar:hover{
-    color: #126fff;
+.list{
+    position: sticky;
+    display: inline-flex;
+    padding: 5px;
+    padding-top: 20px;
+    font-size: 15px;
+    margin-bottom: 0;
+    font-family: Arial,Helvetica,sans-serif;
 }
 
 /*Articulo*/
 
 main{
     font-family: Georgia, serif;
-    margin-left: 30px;
-    margin-right: 0;
 }
 
 .contenedor-article-aside{
     display: inline-block;
-    margin-right: 10px;
 }
 
-.contenido-article-aside{
+.contenedor-links-tittle{
+    margin-top: 100px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.nav-articulo{
     display: inline-block;
-}
-
-.Articulo{
-    background-color: rgb(250, 249, 249);
-    box-shadow: inset 5px 0 5px -5px #cecece;  
-    padding: 0 20px 20px 20px;
-    margin-bottom: 30px;
-    width: 70%;
-    float: left;
 }
 
 .NEWS-mundo{
     display: block;
-    width: 15%;
-    margin: 15px 0 10px 50px;
+    margin-top: 40px;
+    margin-bottom: 15px;
 }
 
-.Links{
-    display: inline-block;
-    /*TOP RIGHT BOTTOM LEFT*/
-    margin: 130px 0 30px 50px;
-    color: #0250c9;   
+.Articulo{
+    display: block;
+    margin: 0 24px 30px 24px;
+    width: 90%;
 }
 
 .title-noticia{
     display: inline-block;
-    margin: 0 30px 0 30px; 
-    font-size: 35px;
-    font-weight: bold;
-    line-height: 1.5em;
-    font-family: Georgia, serif;
-    padding: 0 20px;
-    background-color: rgb(250, 249, 249);
-    box-shadow: inset 5px 0 5px -5px #cecece; 
+    font-size: 15px;
+    line-height: 1.5rem;
+    font-family: serif;
+    margin-bottom: 25px;
 }
 
 .Subtitulo-Noticia{
     display: inline-block;
     font-size: 20px;
-    margin:  14px 0 20px 0; 
+    margin:  14px 0 0 0; 
     font-weight: normal;
     line-height: 1.5em;
+    font-family: Arial,Helvetica,sans-serif;
 }
 
 span {
@@ -163,12 +154,11 @@ span {
     height: fit-content;
     color: #5a5a5a;
     margin-bottom: 10px;
-    margin-top: 0;
-    font-size: 18px;
+    margin-top: 10px;
+    font-size: 1.3rem;
 }
 
 .Imagen-2{
-    padding-left: 0 40px 0 0;
     margin-top: 50px;
 }
 
@@ -177,8 +167,6 @@ article img{
     display: inline-block;
     margin-top: 10px;
 }
-
-
 
 .Descripción-Imagen{
     display: inline-block;
@@ -189,9 +177,8 @@ article img{
 
 section{
     line-height: 1.8em;
-    padding-left: 16px;
-    margin: 20px;
-    font-size: 20px; 
+    margin: 20px 0;
+    font-size: 23px; 
 }
 
 p{
@@ -205,14 +192,8 @@ p{
 strong{
     font-size: 40px;
     color: rgb(46, 46, 46);
-    padding-left: 10px;
 }
 
-/*h2{
-    font-size: 30px;
-    margin-top: 40px;
-    margin-bottom: 0;
-}*/
 
 hr{
     border-bottom: 1px solid #E5E5E5;
@@ -221,40 +202,13 @@ hr{
 /*Aside*/
 
 aside{
-    width: 27.05%;
-    float: right;
-	padding: 30px;
-	font-size: 16px;
-	background: rgb(250, 249, 249);
-	border: none;
-	border-radius: 6px;
-    margin-right: 30px;
-}
-
-aside h1{
-    font-size: 28px;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-aside img{
-    display: inline-block;
-    width: 100%;
-    margin: .5rem;
-    cursor: pointer;
-}
-
-aside p{
-    display: inline-block;
-    font-style: normal;
-    margin: .5rem;
-    cursor: pointer;
+    display: none;
 }
 
 /*Footer*/
 
 footer{
-    margin: 0 30px;
+    margin: 0 24px;
 }
 
 footer h1{
@@ -262,8 +216,8 @@ footer h1{
     color: #0250c9;
     font-size: 50px;
     cursor: pointer;
+    margin-top: 30px;
     margin-bottom: 15px;
-    padding-bottom: 15px;
 }
 
 .tittle-imagen-footer{
@@ -274,47 +228,195 @@ footer h1{
 .imagen-footer{
     border-radius: 0.25rem;
     cursor: pointer;
-    float: right;
-    margin-right: 50px;
-    justify-content: center;
+    margin-bottom: 15px;
 }
 
-.imagen-google{
-    margin: 0 0 0 15px;
-}
-
-.imagen-app{
-    margin: 0 0 0 15px;
-}
-
-.listas{
-    display: block;
-}
-
-li{
-    margin-top: 20px;
-    margin-left: 18px;
-    padding: 5px;
-    display: inline-block;
-}
-
-.condiciones-privacidad{
-    display: inline;
-    margin-left: 100px;
+.footer-listas{
+    display: none; 
 }
 
 footer p{
-    margin: 40px 0 5px 25px;
-    margin-top: 40px;
+    display: block;
+    text-align: center;
+    margin-bottom: 80px;
     font-size: 15px;
     font-weight: 500;
-    font-family: Georgia, serif;
+    font-family: Arial,Helvetica,sans-serif;
 }
 
 .ultimo-parrafo-footer{
     display: block;
-    margin: 30px;
-    margin-bottom: 40px;
-    text-align: right;
-    justify-content: right;
+    text-align: center;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-bottom: 30px;
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 768px){
+   .title-noticia{
+    font-size: 50px;
+    line-height: 3.25rem;
+   }
+
+   main{
+       float: left;
+       width: 75%;
+   }
+   aside{
+        display: inline-block;
+        float: right;
+        width: 25%;       
+	    padding: 30px;
+	    font-size: 16px;
+	    border: none;
+	    border-radius: 6px;
+   }
+
+    aside h1{
+        font-size: 28px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    aside img{
+        display: inline-block;
+        width: 100%;
+        margin: .5rem;
+        cursor: pointer;
+    }
+
+    aside p{
+        display: inline-block;
+        font-style: normal;
+        margin: .5rem;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    .contenedor-NAV-Movil{
+        display: none;
+    }
+
+    .footer-listas{
+        display: inline-block;        
+    }
+
+    .imagen-footer{
+        display: inline;
+        float: right;
+    }
+
+    li{
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 18px;
+        padding: 5px;
+    }
+
+    .ultimo-parrafo-footer{
+        float: right;
+    }
+
+    footer p{
+        float: left;
+        margin-bottom: 30px;
+        margin-left: 24px;
+    }
+
+    .contenedor-button-suscribete, .contenedor-button-secciones{
+        display: inline-block;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    
+     .contenedor-button-ingresar{
+        display: inline-block;
+        float: right;
+    }
+
+    .contenedor-button-suscribete{
+        padding: 0;
+        margin: 0 25px;
+    }
+
+    .contenedor-button-buscar{
+        margin: 0 25px;
+        padding: 0;
+    }
+     
+    button{
+        padding: 12px 16px;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 4px;
+        outline: none;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+    .contenedor-button-left{
+        display: inline-block;
+        position: relative;
+        float: left;
+        justify-content: center;
+    }
+
+    .contenedor-button-right{
+        display: inline-block;
+        position: relative;
+        float: right;
+        justify-content: center;
+    }
+
+    .contenedor-tittle-encabezado{
+        display: inline-block;
+    }
+
+    .tittle-encabezado{
+        color: #0250c9;
+        font-size: 40px;
+        cursor: pointer;
+        
+    }
+
+    .boton-Suscribete{
+        background-color: #ffff24;
+        border-color: #ccc;
+        color: #000;  
+    }
+
+    .boton-Suscribete:hover{
+        text-decoration: none;
+        color: #fefefe;
+        background-color: #000;
+    }
+
+    .boton-Ingresar{
+        background-color: #fff;
+        border-color: #0250c9;
+    }
+    .boton-Ingresar:hover{
+        background: #126fff;
+        border-color: #126fff;
+        color: #fefefe;
+    } 
+
+    .boton-Secciones, .boton-Buscar{
+        background-color: #f2f2f2;
+    }
+
+    .boton-Secciones:hover{
+        color: #126fff;
+        background-color: #f2f2f2;
+    }
+
+    .boton-Buscar:hover{
+        color: #126fff;
+    }
 }
