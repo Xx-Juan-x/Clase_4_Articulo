@@ -44,7 +44,7 @@ button{
     position: absolute;
     font-size: 20px;
     color: #0250c9;
-    cursor: pointer;       
+    cursor: pointer;
 }
 
 .contenedor-button-suscribete{
@@ -58,7 +58,7 @@ button{
 }
 
 .contenedor-button-secciones{
-    display: none;   
+    display: none;
 }
 
 .contenedor-button-ingresar{
@@ -118,7 +118,7 @@ span {
 section{
     line-height: 1.8em;
     margin: 20px 0;
-    font-size: 23px; 
+    font-size: 23px;
 }
 
 p{
@@ -177,7 +177,7 @@ article img{
 .Subtitulo-Noticia{
     display: inline-block;
     font-size: 20px;
-    margin:  14px 0 0 0; 
+    margin:  14px 0 0 0;
     font-weight: normal;
     line-height: 1.5em;
     font-family: Arial,Helvetica,sans-serif;
@@ -190,8 +190,8 @@ article img{
 .Descripción-Imagen{
     display: inline-block;
     font-size: 18px;
-    margin:  10px 0; 
-    font-weight: normal; 
+    margin:  10px 0;
+    font-weight: normal;
 }
 
 .Info{
@@ -245,7 +245,7 @@ footer p{
 }
 
 .footer-listas{
-    display: none; 
+    display: none;
 }
 
 .ultimo-parrafo-footer{
@@ -275,7 +275,7 @@ footer p{
     aside{
         display: inline-block;
         float: right;
-        width: 25%;       
+        width: 25%;
 	    padding: 30px;
 	    font-size: 16px;
 	    border: none;
@@ -367,11 +367,11 @@ footer p{
         margin: 0 25px;
         padding: 0;
     }
-    
+
     .boton-Suscribete{
         background-color: #ffff24;
         border-color: #ccc;
-        color: #000;  
+        color: #000;
     }
 
     .boton-Suscribete:hover{
@@ -388,7 +388,7 @@ footer p{
         background: #126fff;
         border-color: #126fff;
         color: #fefefe;
-    } 
+    }
 
     .boton-Secciones, .boton-Buscar{
         background-color: #f2f2f2;
@@ -425,7 +425,7 @@ footer p{
     }
 
     .footer-listas{
-        display: inline-block;        
+        display: inline-block;
     }
 
     .imagen-footer{
